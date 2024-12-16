@@ -12,7 +12,7 @@
           content: "Temperatuur",
         });
         groups.add({
-          id: 5,
+          id: 1,
           content: "Huminity",
         });
 
