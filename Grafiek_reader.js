@@ -13,15 +13,12 @@
                 left: {
                     range: {
                         min: -10,
-                        max: 10
+                        max: 50
                     }
                 }
             },
             drawPoints: {
                 style: "circle" // square, circle
-            },
-            shaded: {
-                orientation: "bottom" // top, bottom
             }
         };
         var graph2d = new vis.Graph2d(container, dataset, options);
@@ -57,7 +54,7 @@
                 console.log(JSON.stringify(data, null, 4));
                 dataset.add({
                     x: now,
-                    y: 7
+                    y: data[T]
                 });
             });
 
