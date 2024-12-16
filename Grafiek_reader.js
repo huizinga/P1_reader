@@ -29,6 +29,7 @@
                     }
                 }
             },
+            legend: true,
             drawPoints: {
                 style: "circle" // square, circle
             }
