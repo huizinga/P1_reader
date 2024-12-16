@@ -67,12 +67,12 @@
                 console.log(data);        
                 dataset.add({
                     x: now,
-                    y: data.T
+                    y: data.T,
                     group: 0
                 });
                 dataset.add({
                     x: now,
-                    y: data.H
+                    y: data.H,
                     group: 1
                 });
 
