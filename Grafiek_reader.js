@@ -25,7 +25,7 @@
                 left: {
                     range: {
                         min: -10,
-                        max: 50
+                        max: 100
                     }
                 }
             },
