@@ -4,6 +4,18 @@
 
         // create a graph2d with an (currently empty) dataset
         var container = document.getElementById("visualization");
+
+        var groups = new vis.DataSet();
+
+        groups.add({
+          id: 0,
+          content: "Temperatuur",
+        });
+        groups.add({
+          id: 5,
+          content: "Huminity",
+        });
+
         var dataset = new vis.DataSet();
 
         var options = {
@@ -21,7 +33,7 @@
                 style: "circle" // square, circle
             }
         };
-        var graph2d = new vis.Graph2d(container, dataset, options);
+        var graph2d = new vis.Graph2d(container, dataset, groups, options);
 
         function renderStep() {
             // move the window (you can think of different strategies).
@@ -55,7 +67,14 @@
                 dataset.add({
                     x: now,
                     y: data.T
+                    group: 0
                 });
+                dataset.add({
+                    x: now,
+                    y: data.H
+                    group: 1
+                });
+
             });
 
             // remove all data points which are no longer visible
