@@ -1,4 +1,4 @@
-        var DELAY = 4000; // delay in ms to add new data points
+        var DELAY = 10000; // delay in ms to add new data points
 
         var strategy = document.getElementById("strategy");
 
@@ -7,7 +7,7 @@
         var dataset = new vis.DataSet();
 
         var options = {
-            start: vis.moment().add(-500, "seconds"), // changed so its faster
+            start: vis.moment().add(-10, "seconds"), // changed so its faster
             end: vis.moment(),
             dataAxis: {
                 left: {
