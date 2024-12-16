@@ -10,10 +10,12 @@
         groups.add({
           id: 0,
           content: "Temperatuur",
+          title: "Temperatuur"
         });
         groups.add({
           id: 1,
           content: "Huminity",
+          title: "Huminity"
         });
 
         var dataset = new vis.DataSet();
@@ -63,7 +65,7 @@
             var now = vis.moment();
 
  //           $.getJSON("HTTP://192.168.0.151/api", function(data) {
-                $.get("/api").done(function (data) {
+                $.get("/api?time="+now).done(function (data) {
                 console.log(data);        
                 dataset.add({
                     x: now,
