@@ -53,7 +53,7 @@
             var now = vis.moment();
 
  //           $.getJSON("HTTP://192.168.0.151/api", function(data) {
-                $.get("//192.168.0.151/api").done(function (data) {
+                $.get("/api").done(function (data) {
                 console.log(JSON.stringify(data, null, 4));
                 dataset.add({
                     x: now,
