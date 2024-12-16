@@ -52,10 +52,10 @@
  //           $.getJSON("HTTP://192.168.0.151/api", function(data) {
                 $.get("/api").done(function (data) {
                 console.log(JSON.stringify(data, null, 4));
-                console.log(data[H]);        
+                console.log(data.H);        
                 dataset.add({
                     x: now,
-                    y: data[T]
+                    y: data.T
                 });
             });
 
