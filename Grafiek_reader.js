@@ -9,13 +9,11 @@
 
         groups.add({
           id: 'Temp',
-          content: "Temperatuur",
-          title: "Temperatuur"
+          content: "Temperatuur °C"
         });
         groups.add({
           id: 'Hum',
-          content: "Huminity",
-          title: "Huminity"
+          content: "Luchtvochtigheid %"
         });
 
         var dataset = new vis.DataSet();
