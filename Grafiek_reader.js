@@ -1,4 +1,16 @@
-        var DELAY = 30000; // delay in ms to add new data points
+(function() {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = '//huizinga.github.io/P1_reader/favicon.ico';
+    document.getElementsByTagName('head')[0].appendChild(link);
+})();
+
+
+
+
+
+var DELAY = 30000; // delay in ms to add new data points
 
         var strategy = document.getElementById("strategy");
 
