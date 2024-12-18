@@ -42,9 +42,7 @@ var DELAY = 30000; // delay in ms to add new data points
                 }
             },
             legend: true,
-            drawPoints: {
-                style: "circle" // square, circle
-            }
+            drawPoints: false
         };
         var graph2d = new vis.Graph2d(container, dataset, groups, options);
 
