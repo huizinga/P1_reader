@@ -47,12 +47,12 @@
             //     graph2d.setWindow(now - interval, now, { animation: false }); //contnuous
             //      requestAnimationFrame(renderStep);
 
-            //      graph2d.setWindow(now - interval, now, { animation: false }); //discrete
+                  graph2d.setWindow(now - interval, now, { animation: false }); //discrete
 
             // move the window 90% to the left when now is larger than the end of the window
-            if (now > range.end) {
-                graph2d.setWindow(now - 0.1 * interval, now + 0.9 * interval);
-            }
+            //if (now > range.end) {
+            //    graph2d.setWindow(now - 0.1 * interval, now + 0.9 * interval);
+            //}
             setTimeout(renderStep, DELAY);
         }
         renderStep();
