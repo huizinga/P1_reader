@@ -31,7 +31,7 @@ var DELAY = 30000; // delay in ms to add new data points
         var dataset = new vis.DataSet();
 
         var options = {
-            start: vis.moment().add(-1000, "seconds"), // changed so its faster
+            start: vis.moment().add(-10000, "seconds"), // changed so its faster
             end: vis.moment(),
             dataAxis: {
                 left: {
@@ -57,7 +57,7 @@ var DELAY = 30000; // delay in ms to add new data points
             //     graph2d.setWindow(now - interval, now, { animation: false }); //contnuous
             //      requestAnimationFrame(renderStep);
 
-                  graph2d.setWindow(now - interval, now, { animation: false }); //discrete
+                  graph2d.setWindow(now - interval, now+ 100, { animation: false }); //discrete
 
             // move the window 90% to the left when now is larger than the end of the window
             //if (now > range.end) {
