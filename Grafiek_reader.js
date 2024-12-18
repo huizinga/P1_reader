@@ -8,12 +8,12 @@
         var groups = new vis.DataSet();
 
         groups.add({
-          id: 0,
+          id: 'Temp',
           content: "Temperatuur",
           title: "Temperatuur"
         });
         groups.add({
-          id: 1,
+          id: 'Hum',
           content: "Huminity",
           title: "Huminity"
         });
@@ -70,12 +70,12 @@
                 dataset.add({
                     x: data.time,
                     y: data.T,
-                    group: 0
+                    group: 'Temp'
                 });
                 dataset.add({
                     x: data.time,
                     y: data.H,
-                    group: 1
+                    group: 'Hum'
                 });
 
             });
