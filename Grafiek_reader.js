@@ -57,7 +57,7 @@ var DELAY = 30000; // delay in ms to add new data points
             //     graph2d.setWindow(now - interval, now, { animation: false }); //contnuous
             //      requestAnimationFrame(renderStep);
 
-                  graph2d.setWindow(now - interval, now+ 100, { animation: false }); //discrete
+                  graph2d.setWindow(now - interval, now + 1000, { animation: false }); //discrete
 
             // move the window 90% to the left when now is larger than the end of the window
             //if (now > range.end) {
