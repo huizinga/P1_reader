@@ -68,12 +68,12 @@
                 $.get("/api?time="+now).done(function (data) {
                 console.log(data);        
                 dataset.add({
-                    x: now,
+                    x: data.time,
                     y: data.T,
                     group: 0
                 });
                 dataset.add({
-                    x: now,
+                    x: data.time,
                     y: data.H,
                     group: 1
                 });
