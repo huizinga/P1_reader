@@ -1,4 +1,4 @@
-        var DELAY = 10000; // delay in ms to add new data points
+        var DELAY = 30000; // delay in ms to add new data points
 
         var strategy = document.getElementById("strategy");
 
